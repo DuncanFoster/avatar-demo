@@ -1,0 +1,107 @@
+<head>
+  <title>avatar-demo</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor - with Avatars!</h1>
+
+  <p>
+    Super-simple demonstration (using Twitter as setting up an app is easy) of the utilities:avatar package.
+    <br>
+    More details can be found <a href="https://atmospherejs.com/utilities/avatar">here</a>.
+    <br>
+    Note: Both autopublish and insecure packages have been removed from this example.
+  </p>
+  
+  {{>loginButtons}}
+  
+  <h2>Default Avatar</h2>
+  {{>avatar user=currentUser}}
+
+  <h2>Avatar Options</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Parameter
+        </th>
+        <th>
+          Result 1
+        </th>
+        <th>
+          Result 2
+        </th>
+        <th>
+          Result 3
+        </th>
+        <th>
+          Result 4
+        </th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr>
+        <td>
+          Size
+        </td>
+        <td>
+          large
+          {{>avatar user=currentUser size="large"}}          
+        </td>
+        <td>
+          medium (default)
+          {{>avatar user=currentUser size="medium"}}
+        </td>
+        <td>
+          small
+          {{>avatar user=currentUser size="small"}}
+        </td>
+        <td>
+          extra-small
+          {{>avatar user=currentUser size="extra-small"}}
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Shape
+        </td>
+        <td>
+          square (default)
+          {{>avatar user=currentUser}}          
+        </td>
+        <td>
+          rounded
+          {{>avatar user=currentUser shape="rounded"}}
+        </td>
+        <td>
+          circle
+          {{>avatar user=currentUser shape="circle"}}
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Initials
+        </td>
+        <td>
+          Profile (default)
+          {{>avatar user=currentUser}}          
+        </td>
+        <td>
+          Specific
+          {{>avatar user=currentUser initials="SGP"}}
+        </td>
+        <td>
+          Text Colour (txtColor)
+          {{>avatar user=currentUser initials="SGP" txtColor="#000000"}}
+        </td>
+        <td>
+          Background Colour (bgColor)
+          {{>avatar user=currentUser initials="SGP" bgColor="#000000"}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>

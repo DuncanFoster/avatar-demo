@@ -5,5 +5,7 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
-insecure
+utilities:avatar
+accounts-ui
+accounts-password
+accounts-twitter
